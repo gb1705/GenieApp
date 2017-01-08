@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_above="@+id/pass">
+            <EditText android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/pass">
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="Login"
+            android:background="@drawable/button_layout"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/pass"
+            android:textColor="@android:color/white"
+            />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:autoLink="web"
+        android:id="@+id/text_forgot_password"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btn_login"
+        android:clickable="true"
+        android:textStyle=""
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginTop="10dp"></TextView>
+
+        <TextView android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="No account yet? Create one"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/text_forgot_password"
+            android:layout_marginTop="60dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_send_to_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Sign Up"
+        android:background="@drawable/button_layout"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/link_signup"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

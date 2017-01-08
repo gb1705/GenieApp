@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    tools:context="com.neuron.genieapp.Activities.LandingActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_buttons"
+        android:layout_marginTop="20dp">
+
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:numColumns="2"
+    android:elevation="5dp"
+    android:verticalSpacing="30dp"
+    android:gravity="center"
+    android:stretchMode="columnWidth">
+
+
+</GridView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_buttons"
+        android:id="@+id/layout_images">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Offers :"
+            android:layout_marginStart="5dp"
+            android:id="@+id/text_offers"
+            android:background="#f8f8f8"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPageAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_offers">
+            <Button
+                android:text="Explore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/button"
+                android:background="#000000"/>
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_images"
+        android:id="@+id/layout_cards">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:text="Customer Stories :"
+            android:id="@+id/text_customer_stories"/>
+
+        <!--<include layout="@layout/layout_card" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_customer_stories">
+
+        <include
+            layout="@layout/content_main" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

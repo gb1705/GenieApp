@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.neuron.genieapp.Activities.MainScreen">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/appbar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.NoActionBar.FullScreen">
+
+            <!--<ImageButton-->
+                <!--android:layout_height = "50dp"-->
+                <!--android:layout_width = "50dp"-->
+                <!--android:src="@drawable/info_48"-->
+                <!--android:layout_gravity ="end"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:layout_marginEnd="5dp"/>-->
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main_screen" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/appbar"
+        android:layout_above="@+id/chat_layout"/>
+
+    <com.viewpagerindicator.CirclePageIndicator
+    android:id="@+id/indicator"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="bottom"
+    android:padding="10dip"
+    app:centered="true"
+    app:fillColor="#FFFFFF"
+    app:pageColor="#000000"
+    app:snap="false"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chat_layout">
+
+        <ImageButton
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:src="@drawable/chat"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_chat"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/btn_chat"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/fab2"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/microphone"
+        app:backgroundTint="@android:color/white" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_face_black_24dp"
+        app:backgroundTint="@android:color/white" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fab2"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ic_phone_black_24dp"
+        app:backgroundTint="@android:color/white" />
+
+</RelativeLayout>
+

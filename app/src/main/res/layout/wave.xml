@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:wave="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:id="@+id/wavess">
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        wave:above_wave_color="@android:color/white"
+        wave:blow_wave_color="#53d28c"
+        wave:progress="30"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="middle" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        wave:blow_wave_color="@android:color/white"
+        wave:progress="29"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="middle" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave_view1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        wave:above_wave_color="#53d28c"
+        wave:blow_wave_color="@android:color/white"
+        wave:progress="27"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="middle" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        wave:blow_wave_color="@android:color/white"
+        wave:progress="26"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="middle" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave_view2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        wave:above_wave_color="#53d28c"
+        wave:blow_wave_color="@android:color/white"
+        wave:progress="24"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="middle" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        wave:blow_wave_color="@android:color/white"
+        wave:progress="23"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="middle" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave_view3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        wave:above_wave_color="#53d28c"
+        wave:blow_wave_color="@android:color/white"
+        wave:progress="21"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="middle" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        wave:blow_wave_color="@android:color/white"
+        wave:progress="20"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="middle" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave_view4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        wave:above_wave_color="#53d28c"
+        wave:blow_wave_color="@android:color/white"
+        wave:progress="18"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="middle" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        wave:blow_wave_color="@android:color/white"
+        wave:progress="17"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="middle" />
+
+</RelativeLayout>
